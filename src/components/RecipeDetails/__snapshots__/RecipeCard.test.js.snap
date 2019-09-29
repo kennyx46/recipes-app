@@ -10,7 +10,17 @@ ShallowWrapper {
     <ForwardRef(Bootstrap(CardBody))>
       <ForwardRef(Bootstrap(CardTitle)) />
       <div />
-      <ForwardRef(Bootstrap(CardText)) />
+      <ReactMarkdown
+        astPlugins={Array []}
+        escapeHtml={true}
+        parserOptions={Object {}}
+        plugins={Array []}
+        rawSourcePos={false}
+        renderers={Object {}}
+        skipHtml={false}
+        sourcePos={false}
+        transformLinkUri={[Function]}
+      />
     </ForwardRef(Bootstrap(CardBody))>
   </ForwardRef(Bootstrap(Card))>,
   Symbol(enzyme.__renderer__): Object {
