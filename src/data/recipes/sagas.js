@@ -43,7 +43,7 @@ function* getRecipe(action) {
     }
 }
 
-export default function* questionsSaga() {
+export default function* recipesSaga() {
     yield all([
         takeEvery(RECIPES.GET_RECIPES_REQUEST, getRecipes),
         takeEvery(RECIPES.GET_RECIPE_REQUEST, getRecipe),
