@@ -1,8 +1,8 @@
 import { createClient } from 'contentful';
 
-const spaceId = process.env.SPACE_ID;
-const environmentId = process.env.ENVIRONMENT_ID;
-const accessToken = process.env.ACCESS_TOKEN;
+const spaceId = process.env.REACT_APP_SPACE_ID;
+const environmentId = process.env.REACT_APP_ENVIRONMENT_ID;
+const accessToken = process.env.REACT_APP_ACCESS_TOKEN;
 
 const client = createClient({
   space: spaceId,
