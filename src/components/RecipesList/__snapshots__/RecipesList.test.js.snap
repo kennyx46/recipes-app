@@ -1,14 +1,26 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipesList renders component 1`] = `
+exports[`<RecipesList> renders component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ForwardRef(Bootstrap(Container))>
-    <h1>
-      Recipes
-    </h1>
-    <ForwardRef(Bootstrap(Row)) />
-  </ForwardRef(Bootstrap(Container))>,
+  Symbol(enzyme.__unrendered__): <RecipesList
+    getRecipes={
+      [MockFunction] {
+        "calls": Array [
+          Array [],
+        ],
+        "results": Array [
+          Object {
+            "isThrow": false,
+            "value": undefined,
+          },
+        ],
+      }
+    }
+    isLoading={false}
+    push={[MockFunction]}
+    recipes={Array []}
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -23,27 +35,57 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": [Function],
+      "children": Array [
+        <h1>
+          Recipes
+        </h1>,
+        undefined,
+        <ForwardRef
+          noGutters={false}
+        />,
+      ],
+      "fluid": false,
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": "Recipes",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": Map {},
-        "_currentValue2": Map {},
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": "Recipes",
+        "type": "h1",
       },
+      undefined,
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [],
+          "noGutters": false,
+        },
+        "ref": null,
+        "rendered": Array [],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "noGutters": false,
+          },
+          "render": [Function],
+        },
+      },
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "defaultProps": Object {
+        "fluid": false,
+      },
+      "displayName": "Container",
+      "render": [Function],
     },
   },
   Symbol(enzyme.__nodes__): Array [
@@ -52,27 +94,57 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": [Function],
+        "children": Array [
+          <h1>
+            Recipes
+          </h1>,
+          undefined,
+          <ForwardRef
+            noGutters={false}
+          />,
+        ],
+        "fluid": false,
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": "Recipes",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": Map {},
-          "_currentValue2": Map {},
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": "Recipes",
+          "type": "h1",
         },
+        undefined,
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [],
+            "noGutters": false,
+          },
+          "ref": null,
+          "rendered": Array [],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "noGutters": false,
+            },
+            "render": [Function],
+          },
+        },
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "fluid": false,
+        },
+        "displayName": "Container",
+        "render": [Function],
       },
     },
   ],
@@ -96,7 +168,7 @@ ShallowWrapper {
         },
       },
     },
-    "context": Object {},
   },
+  Symbol(enzyme.__childContext__): null,
 }
 `;

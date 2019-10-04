@@ -3,8 +3,9 @@ import { shallow } from 'enzyme';
 import RecipeCard from './RecipeCard';
 
 import RecipeDetails from './RecipeDetails';
+import LoadingSpinner from '../LoadingSpinner';
 
-describe('RecipeDetails', () => {
+describe('<RecipeDetails>', () => {
     const defaultProps = Object.freeze({
         recipe: {
             tags: []
@@ -18,19 +19,19 @@ describe('RecipeDetails', () => {
     it('renders component', async () => {
         const wrapper = shallow(
             <RecipeDetails {...defaultProps }/>
-        ).dive();
+        );
 
         expect(wrapper).toMatchSnapshot();
     });
 
-    it('shows loading if loading in progress', async () => {
+    it('shows <LoadingSpinner> if loading in progress', async () => {
         const props = { ...defaultProps, isLoading: true };
         const recipeDetails = shallow(<RecipeDetails {...props} />);
 
-        expect(recipeDetails.text()).toContain('Loading');
+        expect(recipeDetails.exists(LoadingSpinner)).toBeTruthy();
     });
 
-    it('renders RecipeCard if recipe is present', async () => {
+    it('renders <RecipeCard> if recipe is present', async () => {
         const props = { ...defaultProps };
         const recipeDetails = shallow(<RecipeDetails {...props} />);
 

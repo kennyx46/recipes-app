@@ -4,33 +4,35 @@ import RecipeCard from './RecipeCard';
 import Card from 'react-bootstrap/Card';
 import Badge from 'react-bootstrap/Badge';
 
-describe('RecipeCard', () => {
+describe('<RecipeCard>', () => {
     const defaultProps = Object.freeze({
+        id: '1',
+        title: 'Awesome food',
         tags: []
     });
 
     it('renders component', () => {
         const wrapper = shallow(
             <RecipeCard {...defaultProps }/>
-        ).dive();
+        );
 
         expect(wrapper).toMatchSnapshot();
     });
 
     it('renders recipe details', () => {
-        const sampleRecipe = { id: '1', title: 'Awesome food', tags: [] };
-        const props = { ...defaultProps, ...sampleRecipe };
-        const recipeCard = shallow(<RecipeCard {...props} />);
+        const recipeCard = shallow(<RecipeCard {...defaultProps} />);
 
-        expect(recipeCard.find(Card.Title).text()).toContain('Awesome food');
+        expect(recipeCard.find(Card.Title).text()).toContain(defaultProps.title);
     });
 
-    it('renders recipe tags', () => {
-        const sampleRecipe = { id: '1', title: 'Awesome food', tags: ['first Tag', 'second Tag'] };
-        const props = { ...defaultProps, ...sampleRecipe };
+    it('renders <Badge> for every recipe tag', () => {
+        const props = {
+            ...defaultProps,
+            tags: ['first Tag', 'second Tag'],
+        };
         const recipeCard = shallow(<RecipeCard {...props} />);
 
-        expect(recipeCard.find(Badge)).toHaveLength(2);
+        expect(recipeCard.find(Badge)).toHaveLength(props.tags.length);
     });
 
 });

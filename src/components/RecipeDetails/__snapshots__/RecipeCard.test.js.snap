@@ -1,28 +1,13 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`RecipeCard renders component 1`] = `
+exports[`<RecipeCard> renders component 1`] = `
 ShallowWrapper {
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <ForwardRef(Bootstrap(Card))>
-    <ForwardRef(Bootstrap(CardImg))
-      variant="top"
-    />
-    <ForwardRef(Bootstrap(CardBody))>
-      <ForwardRef(Bootstrap(CardTitle)) />
-      <div />
-      <ReactMarkdown
-        astPlugins={Array []}
-        escapeHtml={true}
-        parserOptions={Object {}}
-        plugins={Array []}
-        rawSourcePos={false}
-        renderers={Object {}}
-        skipHtml={false}
-        sourcePos={false}
-        transformLinkUri={[Function]}
-      />
-    </ForwardRef(Bootstrap(CardBody))>
-  </ForwardRef(Bootstrap(Card))>,
+  Symbol(enzyme.__unrendered__): <RecipeCard
+    id="1"
+    tags={Array []}
+    title="Awesome food"
+  />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "checkPropTypes": [Function],
@@ -37,27 +22,197 @@ ShallowWrapper {
     "key": undefined,
     "nodeType": "function",
     "props": Object {
-      "children": [Function],
+      "body": false,
+      "children": Array [
+        <ForwardRef
+          variant="top"
+        />,
+        <ForwardRef>
+          <ForwardRef>
+            Awesome food
+          </ForwardRef>
+          <div />
+          <ReactMarkdown
+            astPlugins={Array []}
+            escapeHtml={true}
+            parserOptions={Object {}}
+            plugins={Array []}
+            rawSourcePos={false}
+            renderers={Object {}}
+            skipHtml={false}
+            sourcePos={false}
+            transformLinkUri={[Function]}
+          />
+        </ForwardRef>,
+        undefined,
+      ],
     },
     "ref": null,
-    "rendered": [Function],
-    "type": Object {
-      "$$typeof": Symbol(react.context),
-      "_calculateChangedBits": null,
-      "_context": Object {
-        "$$typeof": Symbol(react.context),
-        "Consumer": [Circular],
-        "Provider": Object {
-          "$$typeof": Symbol(react.provider),
-          "_context": [Circular],
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "src": undefined,
+          "variant": "top",
         },
-        "_calculateChangedBits": null,
-        "_currentRenderer": null,
-        "_currentRenderer2": null,
-        "_currentValue": Map {},
-        "_currentValue2": Map {},
-        "_threadCount": 0,
+        "ref": null,
+        "rendered": null,
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "variant": null,
+          },
+          "displayName": "CardImg",
+          "render": [Function],
+        },
       },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "function",
+        "props": Object {
+          "children": Array [
+            <ForwardRef>
+              Awesome food
+            </ForwardRef>,
+            <div />,
+            <ReactMarkdown
+              astPlugins={Array []}
+              escapeHtml={true}
+              parserOptions={Object {}}
+              plugins={Array []}
+              rawSourcePos={false}
+              renderers={Object {}}
+              skipHtml={false}
+              sourcePos={false}
+              transformLinkUri={[Function]}
+            />,
+          ],
+        },
+        "ref": null,
+        "rendered": Array [
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "children": "Awesome food",
+            },
+            "ref": null,
+            "rendered": "Awesome food",
+            "type": Object {
+              "$$typeof": Symbol(react.forward_ref),
+              "defaultProps": undefined,
+              "displayName": "CardTitle",
+              "render": [Function],
+            },
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "host",
+            "props": Object {
+              "children": Array [],
+            },
+            "ref": null,
+            "rendered": Array [],
+            "type": "div",
+          },
+          Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "function",
+            "props": Object {
+              "astPlugins": Array [],
+              "escapeHtml": true,
+              "parserOptions": Object {},
+              "plugins": Array [],
+              "rawSourcePos": false,
+              "renderers": Object {},
+              "skipHtml": false,
+              "source": undefined,
+              "sourcePos": false,
+              "transformLinkUri": [Function],
+            },
+            "ref": null,
+            "rendered": null,
+            "type": [Function],
+          },
+        ],
+        "type": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardBody",
+          "render": [Function],
+        },
+      },
+      undefined,
+    ],
+    "type": Object {
+      "$$typeof": Symbol(react.forward_ref),
+      "Body": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardBody",
+        "render": [Function],
+      },
+      "Footer": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardFooter",
+        "render": [Function],
+      },
+      "Header": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardHeader",
+        "render": [Function],
+      },
+      "Img": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": Object {
+          "variant": null,
+        },
+        "displayName": "CardImg",
+        "render": [Function],
+      },
+      "ImgOverlay": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardImgOverlay",
+        "render": [Function],
+      },
+      "Link": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardLink",
+        "render": [Function],
+      },
+      "Subtitle": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardSubtitle",
+        "render": [Function],
+      },
+      "Text": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardText",
+        "render": [Function],
+      },
+      "Title": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "defaultProps": undefined,
+        "displayName": "CardTitle",
+        "render": [Function],
+      },
+      "defaultProps": Object {
+        "body": false,
+      },
+      "displayName": "Card",
+      "render": [Function],
     },
   },
   Symbol(enzyme.__nodes__): Array [
@@ -66,27 +221,197 @@ ShallowWrapper {
       "key": undefined,
       "nodeType": "function",
       "props": Object {
-        "children": [Function],
+        "body": false,
+        "children": Array [
+          <ForwardRef
+            variant="top"
+          />,
+          <ForwardRef>
+            <ForwardRef>
+              Awesome food
+            </ForwardRef>
+            <div />
+            <ReactMarkdown
+              astPlugins={Array []}
+              escapeHtml={true}
+              parserOptions={Object {}}
+              plugins={Array []}
+              rawSourcePos={false}
+              renderers={Object {}}
+              skipHtml={false}
+              sourcePos={false}
+              transformLinkUri={[Function]}
+            />
+          </ForwardRef>,
+          undefined,
+        ],
       },
       "ref": null,
-      "rendered": [Function],
-      "type": Object {
-        "$$typeof": Symbol(react.context),
-        "_calculateChangedBits": null,
-        "_context": Object {
-          "$$typeof": Symbol(react.context),
-          "Consumer": [Circular],
-          "Provider": Object {
-            "$$typeof": Symbol(react.provider),
-            "_context": [Circular],
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "src": undefined,
+            "variant": "top",
           },
-          "_calculateChangedBits": null,
-          "_currentRenderer": null,
-          "_currentRenderer2": null,
-          "_currentValue": Map {},
-          "_currentValue2": Map {},
-          "_threadCount": 0,
+          "ref": null,
+          "rendered": null,
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": Object {
+              "variant": null,
+            },
+            "displayName": "CardImg",
+            "render": [Function],
+          },
         },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "function",
+          "props": Object {
+            "children": Array [
+              <ForwardRef>
+                Awesome food
+              </ForwardRef>,
+              <div />,
+              <ReactMarkdown
+                astPlugins={Array []}
+                escapeHtml={true}
+                parserOptions={Object {}}
+                plugins={Array []}
+                rawSourcePos={false}
+                renderers={Object {}}
+                skipHtml={false}
+                sourcePos={false}
+                transformLinkUri={[Function]}
+              />,
+            ],
+          },
+          "ref": null,
+          "rendered": Array [
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "children": "Awesome food",
+              },
+              "ref": null,
+              "rendered": "Awesome food",
+              "type": Object {
+                "$$typeof": Symbol(react.forward_ref),
+                "defaultProps": undefined,
+                "displayName": "CardTitle",
+                "render": [Function],
+              },
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "host",
+              "props": Object {
+                "children": Array [],
+              },
+              "ref": null,
+              "rendered": Array [],
+              "type": "div",
+            },
+            Object {
+              "instance": null,
+              "key": undefined,
+              "nodeType": "function",
+              "props": Object {
+                "astPlugins": Array [],
+                "escapeHtml": true,
+                "parserOptions": Object {},
+                "plugins": Array [],
+                "rawSourcePos": false,
+                "renderers": Object {},
+                "skipHtml": false,
+                "source": undefined,
+                "sourcePos": false,
+                "transformLinkUri": [Function],
+              },
+              "ref": null,
+              "rendered": null,
+              "type": [Function],
+            },
+          ],
+          "type": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "defaultProps": undefined,
+            "displayName": "CardBody",
+            "render": [Function],
+          },
+        },
+        undefined,
+      ],
+      "type": Object {
+        "$$typeof": Symbol(react.forward_ref),
+        "Body": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardBody",
+          "render": [Function],
+        },
+        "Footer": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardFooter",
+          "render": [Function],
+        },
+        "Header": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardHeader",
+          "render": [Function],
+        },
+        "Img": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": Object {
+            "variant": null,
+          },
+          "displayName": "CardImg",
+          "render": [Function],
+        },
+        "ImgOverlay": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardImgOverlay",
+          "render": [Function],
+        },
+        "Link": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardLink",
+          "render": [Function],
+        },
+        "Subtitle": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardSubtitle",
+          "render": [Function],
+        },
+        "Text": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardText",
+          "render": [Function],
+        },
+        "Title": Object {
+          "$$typeof": Symbol(react.forward_ref),
+          "defaultProps": undefined,
+          "displayName": "CardTitle",
+          "render": [Function],
+        },
+        "defaultProps": Object {
+          "body": false,
+        },
+        "displayName": "Card",
+        "render": [Function],
       },
     },
   ],
@@ -110,7 +435,6 @@ ShallowWrapper {
         },
       },
     },
-    "context": Object {},
   },
 }
 `;

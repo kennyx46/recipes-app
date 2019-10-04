@@ -13,6 +13,7 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: true,
+                error: null,
             }
         case RECIPES.GET_RECIPES_SUCCESS:
             return {
@@ -31,6 +32,7 @@ export default (state = initialState, action) => {
             return {
                 ...state,
                 isLoading: true,
+                error: null,
             }
         case RECIPES.GET_RECIPE_SUCCESS:
             return {

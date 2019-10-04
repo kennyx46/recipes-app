@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Alert from 'react-bootstrap/Alert';
+import LoadingSpinner from '../LoadingSpinner';
 import RecipeCard from './RecipeCard';
 
 export default class RecipeDetails extends Component {
@@ -13,13 +14,11 @@ export default class RecipeDetails extends Component {
     }
 
     render() {
-        let { isLoading, recipe, error } = this.props;
+        const { isLoading, recipe, error } = this.props;
 
-        if (isLoading || !recipe) {
+        if (isLoading) {
             return (
-                <Container>
-                    <p>Loading</p>
-                </Container>
+                <LoadingSpinner/>
             );
         }
 
@@ -29,7 +28,7 @@ export default class RecipeDetails extends Component {
                 <div className="my-2">
                     <Link to='/'>Recipes</Link>
                 </div>
-                { error ?
+                { error || !recipe ?
                     <Alert variant='danger'>Someting went wrong. Please try again later</Alert> :
                     <RecipeCard {...recipe}/>
                 }

@@ -4,6 +4,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Alert from 'react-bootstrap/Alert';
+import LoadingSpinner from '../LoadingSpinner';
 
 import './RecipesList.css';
 
@@ -29,9 +30,7 @@ export default class RecipesList extends Component {
 
         if (isLoading) {
             return (
-                <Container>
-                    <p>Loading</p>
-                </Container>
+                <LoadingSpinner/>
             );
         }
 
