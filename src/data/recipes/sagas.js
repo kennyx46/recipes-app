@@ -3,20 +3,9 @@ import { RECIPES } from '../actionTypes';
 import actions from './actions';
 import { getRecipesItems } from './selectors';
 import api from '../../services/api';
+import parseRecipe from '../../utils/parseRecipe';
 
-
-const parseRecipe = (recipe) => {
-    return {
-        id: recipe.sys.id,
-        title: recipe.fields.title,
-        image: `https:${recipe.fields.photo.fields.file.url}`,
-        chef: recipe.fields.chef && recipe.fields.chef.fields.name,
-        description: recipe.fields.description,
-        tags: (recipe.fields.tags || []).map(tag => tag.fields.name),
-    };
-}
-
-function* getRecipes() {
+export function* getRecipes() {
     try {
         const recipes = yield call(api.getRecipes);
         const parsedRecipes = recipes.map(parseRecipe);
@@ -27,7 +16,7 @@ function* getRecipes() {
     }
 }
 
-function* getRecipe(action) {
+export function* getRecipe(action) {
     try {
         const allRecipes = yield select(getRecipesItems);
         let recipe = allRecipes.find((recipe) => recipe.id === action.payload.recipeId);
